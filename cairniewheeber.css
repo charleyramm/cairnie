@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Page, container, wrapper elements */
+body {
+  font-family: Chalkboard, "Comic Sans MS", sans-serif;
+  font-size: 16px;
+  color: #333;
+  text-shadow: 0 0 1px rgba(0,0,0,0.1);
+  background: #eee;
+}
+
+.treeandweave {
+  background: #FFFFFF url(treeweave.png) top left;
+  background-repeat: no-repeat;
+  background-position: left top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 820px;
+}
+.treeandweave p{
+    background: #BFB1A7 url(sasha.png) top center;
+      padding: 10px;
+}
+.oatmeal {
+  background-image: url(oatmeal.png);
+}
+
+/* The Header */
+
+.page-header {
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.entry-title{
+  display: none;
+}
+.logo {
+  margin-top: 7px;
+}
+h1, .h1 {
+  font-size: 54px;
+  line-height: .8;
+}
+h1 small, .h1 small {
+  font-size: 45%;
+}
+a {
+  color: #333333;
+}
+a:hover {
+  text-decoration: none;
+  color: #00738e;
+}
+.nav li a:hover, .nav li.active a, .nav li a:active {
+  background: none;
+}
+.navbar{
+  margin-bottom: 0;}
+.navbar-toggle {
+  width: 100%;
+  float: none;
+  margin-right: 0;
+}
+.blue {
+  color: #00738e;
+  color: #333;
+}
+.blue-secondary {
+  color: #00738e;
+  color: #333;
+
+}
+.sasha {
+  background: #BFB1A7 url(sasha.png) top center;
+  /*border: 2px dotted #ccc;*/
+}
+p.sasha { /* one of these looks redundant */
+  padding: 10px;
+}
+.push-down {
+  margin-top: 10vw;
+}
+.push-down-1 {
+  padding-top: 30px;
+}
+.push{
+  margin-top: 200px;
+  margin-bottom: 200px;
+
+}
+.page-title {
+  margin-top: 0;
+}
+.thumbnail {
+  background: transparent;
+  border: none;
+}
+
+
+/* Details page */
+
+.dl-horizontal dt{
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.7 !important; // why u no worky? specificity.
+
+}
+
+.dl-horizontal dt{
+  }
+
+
+
+
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.border{
+  border: 7px solid #808080;
+}
+
+.wp-caption {
+
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 1px solid #cfcfcf;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.gallery img{
+  border: 1px solid #cfcfcf !important;
+}
+
+.wp-caption p.wp-caption-text {
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Media queries */
+
+@media(max-width:767px){
+
+  }
+@media(min-width:768px){
+
+  }
+@media(min-width:992px){
+    /* on larger screens pull the images right out of the content div */
+   .alignright{
+    margin: 0 -50% 0 0 !important;
+    width: 50% !important;}
+   .alignleft{
+     margin: 0 0 0 -50% !important;
+     width: 50% !important;}
+   .gallery{
+     width: 200%;
+     margin-left: -50% !important;
+   clear: both;}
+  }
+@media(min-width:1200px){
+
+  }
