@@ -15,6 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
+<div class="row oatmeal push-down-1">
+  <div class=" col-md-6 col-md-offset-3">
+
 	<?php
 		/**
 		 * woocommerce_before_main_content hook
@@ -48,5 +51,6 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
-
+	</div>
+</div>
 <?php get_footer( 'shop' ); ?>

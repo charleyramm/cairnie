@@ -8,8 +8,26 @@
 
 get_header(); ?>
 
-<div class="row treeandweave">
-	<div class="col-md-offset-8 col-md-3 push ">
+<style type="text/css">
+.treeweave {
+  background: #FFFFFF url(<?php echo get_stylesheet_directory_uri() ?>/treeweave.png) top left;
+  background-repeat: no-repeat;
+  background-position: left top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 820px;
+}
+.treeweave p{
+    background: #BFB1A7 url(<?php echo get_stylesheet_directory_uri() ?>/sasha.png) top center;
+    padding: 10px;
+    margin-top: 128px;
+
+}</style>
+
+<div class="row treeweave push-down-1">
+  <div class=" col-md-3 col-md-offset-8">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -17,10 +35,8 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
-
-	</div>
-</div><!--row-->
-
+    </div>
+</div>
 
 
 <?php get_footer(); ?>

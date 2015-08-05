@@ -10,20 +10,6 @@ body {
   background: #eee;
 }
 
-.treeandweave {
-  background: #FFFFFF url(treeweave.png) top left;
-  background-repeat: no-repeat;
-  background-position: left top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 820px;
-}
-.treeandweave p{
-    background: #BFB1A7 url(sasha.png) top center;
-      padding: 10px;
-}
 .oatmeal {
   background-image: url(oatmeal.png);
 }
@@ -59,6 +45,7 @@ a:hover {
 .nav li a:hover, .nav li.active a, .nav li a:active {
   background: none;
 }
+
 .navbar{
   margin-bottom: 0;}
 .navbar-toggle {
@@ -67,13 +54,16 @@ a:hover {
   margin-right: 0;
 }
 .blue {
-  color: #00738e;
   color: #333;
 }
 .blue-secondary {
   color: #00738e;
   color: #333;
 
+}
+.entry-content a{
+  text-decoration: underline;
+ 
 }
 .sasha {
   background: #BFB1A7 url(sasha.png) top center;
@@ -145,21 +135,25 @@ div.aligncenter {
 a img.alignright {
     float: right;
     margin: 5px 0 20px 20px;
+    border: 1px solid #cfcfcf;
 }
 
 a img.alignnone {
     margin: 5px 20px 20px 0;
+    border: 1px solid #cfcfcf;
 }
 
 a img.alignleft {
     float: left;
     margin: 5px 20px 20px 0;
+    border: 1px solid #cfcfcf;
 }
 
 a img.aligncenter {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    border: 1px solid #cfcfcf;
 }
 .border{
   border: 7px solid #808080;
@@ -192,13 +186,23 @@ a img.aligncenter {
     padding: 0;
     width: auto;
 }
-.gallery img{
-  border: 1px solid #cfcfcf !important;
-}
 
 .wp-caption p.wp-caption-text {
     margin: 0;
     padding: 0 4px 5px;
+}
+
+.
+gallery img{
+    border: none !important;
+}
+.gallery-size-thumbnail img{
+    max-width: 170px !important;
+    height: auto !important;
+}
+.gallery-size-medium img{
+    max-width: 256px !important;
+    height: auto !important;
 }
 
 /* Text meant only for screen readers. */
@@ -249,8 +253,28 @@ a img.aligncenter {
    .gallery{
      width: 200%;
      margin-left: -50% !important;
-   clear: both;}
+     clear: both;}
   }
 @media(min-width:1200px){
 
+  }
+
+
+/* Bootstrap */
+  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+    background: none;
+  }
+
+/* WooCommerce */
+  .woocommerce-breadcrumb{
+    display: none;
+  }
+  .page-title{
+    display: none;
+  }
+  .woocommerce-result-count{
+    display: none;
+  }
+  .woocommerce-ordering{
+    display: none;
   }
