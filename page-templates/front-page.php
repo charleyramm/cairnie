@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Front Page Template
+ * Template Name: Front Page 
  *
  * Description: A page template that provides a carefully crafted introductory page.
  *

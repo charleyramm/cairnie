@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $post, $woocommerce, $product;
 
 ?>
-<div class="images">
+<div class="images col-md-7 text-center">
 
 	<?php
 		if ( has_post_thumbnail() ) {
@@ -35,7 +35,7 @@ global $post, $woocommerce, $product;
 				$gallery = '';
 			}
 
-			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto' . $gallery . '">%s</a>', $image_link, $image_caption, $image ), $post->ID );
+			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<p href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto' . $gallery . '">%s</p>', $image_link, $image_caption, $image ), $post->ID );
 
 		} else {
 
@@ -47,3 +47,4 @@ global $post, $woocommerce, $product;
 	<?php do_action( 'woocommerce_product_thumbnails' ); ?>
 
 </div>
+

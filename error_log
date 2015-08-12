@@ -1,0 +1,1 @@
+[10-Aug-2015 17:25:29 UTC] PHP Warning:  fileperms(): stat failed for /home/cairnie/public_html/wordpress/index.php in /home/cairnie/public_html/wordpress/wp-admin/includes/file.php on line 883

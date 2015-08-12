@@ -63,7 +63,8 @@ a:hover {
 }
 .entry-content a{
   text-decoration: underline;
- 
+  color: #00738e;
+
 }
 .sasha {
   background: #BFB1A7 url(sasha.png) top center;
@@ -103,6 +104,10 @@ p.sasha { /* one of these looks redundant */
 
 .dl-horizontal dt{
   }
+
+.page-template-fabric-single .wp-post-image, .single-fabric .wp-post-image{
+    border: 7px solid #808080;
+}
 
 
 
@@ -192,18 +197,28 @@ a img.aligncenter {
     padding: 0 4px 5px;
 }
 
-.
-gallery img{
+.gallery img{
     border: none !important;
 }
-.gallery-size-thumbnail img{
-    max-width: 170px !important;
+.gallery-size-thumbnail img, .size-thumbnail{
+    width: 170px !important;
+    max-width: 80% !important;
     height: auto !important;
 }
-.gallery-size-medium img{
-    max-width: 256px !important;
+.gallery-size-medium img, img.size-medium{
+    width: 256px !important;
+    max-width: 80% !important;
     height: auto !important;
 }
+{
+  width: 170px !important;
+
+}
+.attachment-large{
+  width: 512px !important;
+  height: auto !important;
+}
+
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -238,10 +253,15 @@ gallery img{
 
 @media(max-width:767px){
 
+
+
+
   }
 @media(min-width:768px){
 
+
   }
+
 @media(min-width:992px){
     /* on larger screens pull the images right out of the content div */
    .alignright{
@@ -254,7 +274,9 @@ gallery img{
      width: 200%;
      margin-left: -50% !important;
      clear: both;}
+
   }
+
 @media(min-width:1200px){
 
   }
@@ -267,7 +289,6 @@ gallery img{
 
 /* WooCommerce */
   .woocommerce-breadcrumb{
-    display: none;
   }
   .page-title{
     display: none;
@@ -278,3 +299,26 @@ gallery img{
   .woocommerce-ordering{
     display: none;
   }
+.woocommerce-tabs{
+  max-width: 400px;
+  float: right;
+  clear: none;
+}
+.woocommerce-tabs .tabs{
+  display: none;
+}
+#tab-additional_information h2{
+  display: none;
+}
+.product_meta .posted_in{
+  display: none;
+}
+.images img{
+  width: 480px;
+  height: auto;
+  border: 7px solid #808080;
+}
+.panel{
+  background-color: transparent;
+  border-bottom: none;
+}
