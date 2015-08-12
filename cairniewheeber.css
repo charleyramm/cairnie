@@ -205,7 +205,7 @@ a img.aligncenter {
     max-width: 80% !important;
     height: auto !important;
 }
-.gallery-size-medium img, img.size-medium{
+.gallery-size-medium img, img.size-medium, img.attachment-medium{
     width: 256px !important;
     max-width: 80% !important;
     height: auto !important;
