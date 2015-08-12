@@ -44,3 +44,12 @@ function cairnie_the_attributes() {
     }
   }
 }
+/*
+function has_children() {
+    if ($children = get_children(array('post_parent' => $post->ID))
+    {
+      return TRUE;
+    } else {
+      return FALSE;
+    }
+}*/

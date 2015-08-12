@@ -110,7 +110,10 @@ p.sasha { /* one of these looks redundant */
 }
 
 
-
+/* Fabrics page */
+.fabric-child{
+  margin-bottom: 2em;
+}
 
 
 
@@ -210,10 +213,7 @@ a img.aligncenter {
     max-width: 80% !important;
     height: auto !important;
 }
-{
-  width: 170px !important;
 
-}
 .attachment-large{
   width: 512px !important;
   height: auto !important;

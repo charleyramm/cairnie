@@ -6,32 +6,30 @@
  */
 
 get_header(); ?>
-
+<div class="row oatmeal sasha push-down-1">
 <!-- if the page has children: we want to display them in a gallery
   and suppress any DETAILS and THUMBNAIL that would otherwise be displayed on
   a single-fabric page. -->
 
   <?php
-  $id = $post->ID;
-  $args = array(
-		'post_parent' => $id,
-	);
 
-  if ($children = get_children( $args )){
-    echo '<p>this page has child pages</p>';
+  if ($children = get_children(array( 'post_parent' => $post->ID ))){
+
     foreach ($children as $child){
       $link = get_permalink($child->ID);
+      echo "<div class='col-md-4 text-center fabric-child'>";
       echo "<a href='$link'>";
       echo get_the_post_thumbnail($child->ID, 'medium');
       echo "<p>$child->post_title</p>";
       echo "</a>";
-      print_r( $child );
+      echo "</div>";
+
     }
 
   } else { ?>
+<!-- if the page has no children display the single-fabric template -->
 
 
-<div class="row oatmeal sasha push-down-1">
   <div class="col-md-7 text-center">
     <?php
       if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
@@ -58,8 +56,8 @@ get_header(); ?>
       <?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
 
     </div>
-</div>
+
 <?php } //end if ?>
 
-
+</div><!-- close row -->
 <?php get_footer(); ?>
