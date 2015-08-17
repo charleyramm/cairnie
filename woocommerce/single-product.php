@@ -16,6 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header( 'shop' ); ?>
 
 <div class="row sasha push-down-1">
+  <div class="entry-content col-md-6">
 
 	<?php
 		/**
@@ -41,6 +42,7 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
-
+  </div>
 </div>
 <?php get_footer( 'shop' ); ?>
+
