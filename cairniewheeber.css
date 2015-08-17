@@ -105,7 +105,7 @@ p.sasha { /* one of these looks redundant */
 .dl-horizontal dt{
   }
 
-.page-template-fabric-single .wp-post-image, .single-fabric .wp-post-image{
+.page-template-fabric-single .wp-post-image, .single-fabric .wp-post-image, .attachment-large{
     border: 7px solid #808080;
 }
 
